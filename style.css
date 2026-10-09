@@ -1,0 +1,73 @@
+:root {
+  --bg: #ffffff;
+  --text: #1f2328;
+  --muted: #656d76;
+  --accent: #1a5fb4;
+  --border: #d8dee4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171a;
+    --text: #e6e8ea;
+    --muted: #9aa3ab;
+    --accent: #6ea8fe;
+    --border: #2c3238;
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 4rem; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container { max-width: 760px; margin: 0 auto; padding: 0 1rem; }
+
+/* Header / nav */
+.site-header {
+  position: sticky; top: 0; z-index: 10;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+.site-header nav {
+  display: flex; flex-wrap: wrap; align-items: center;
+  justify-content: space-between; gap: .5rem 1.5rem;
+  padding-top: .75rem; padding-bottom: .75rem;
+}
+.brand { font-weight: 700; color: var(--text); }
+.site-header ul { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; list-style: none; margin: 0; padding: 0; }
+
+/* Sections */
+section { padding: 2.5rem 0 1rem; }
+h1 { font-size: 2rem; margin: 0 0 .25rem; line-height: 1.2; }
+h2 { font-size: 1.4rem; margin: 0 0 1rem; padding-bottom: .4rem; border-bottom: 1px solid var(--border); }
+h3 { font-size: 1.05rem; margin: 1.75rem 0 .5rem; }
+h4 { font-size: 1rem; margin: 0; }
+.zh { font-weight: 400; color: var(--muted); font-size: 1.3rem; margin-left: .25rem; }
+.muted { color: var(--muted); margin: .15rem 0 0; }
+.subtitle { margin: 0; font-size: 1.1rem; }
+.status { margin: .15rem 0 1rem; color: var(--accent); font-weight: 600; }
+.item { margin: 0 0 1rem; }
+
+/* Hero */
+.hero { display: flex; gap: 1.75rem; align-items: flex-start; padding-top: 3rem; }
+.photo {
+  flex: 0 0 150px; height: 190px;
+  display: flex; align-items: center; justify-content: center;
+  border: 1px dashed var(--border); border-radius: 8px; color: var(--muted);
+}
+
+footer { padding: 2rem 1rem 3rem; margin-top: 2rem; border-top: 1px solid var(--border); }
+
+@media (max-width: 600px) {
+  .hero { flex-direction: column; }
+  .photo { flex-basis: auto; width: 150px; }
+}
