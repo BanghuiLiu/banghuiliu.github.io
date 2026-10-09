@@ -1,2 +1,113 @@
-<h1>刘帮辉的个人空间</h1>
-<p>你好！这是我的个人主页。</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Banghui Liu (刘帮辉)</title>
+  <meta name="description" content="Personal academic website of Banghui Liu (刘帮辉), PhD candidate on the job market.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="container">
+      <a class="brand" href="#top">Banghui Liu</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top" class="container">
+
+    <!-- ABOUT -->
+    <section id="about" class="hero">
+      <div class="photo" aria-label="Profile photo placeholder">Photo</div>
+      <div>
+        <h1>Banghui Liu <span class="zh">刘帮辉</span></h1>
+        <p class="subtitle">PhD Candidate, [Department], [University]</p>
+        <p class="status">On the job market, [year]–[year]</p>
+        <p>[Short bio: research interests, what you work on, and what you are looking for.]</p>
+        <p class="links">
+          <a href="#cv">CV (PDF)</a> ·
+          <a href="#contact">Email</a> ·
+          <a href="#">Google Scholar</a> ·
+          <a href="https://github.com/banghuiliu">GitHub</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research">
+      <h2>Research</h2>
+      <p class="muted">Fields: [Field 1], [Field 2]</p>
+
+      <h3>Job Market Paper</h3>
+      <article class="item">
+        <h4>[Title]</h4>
+        <p class="muted">[Abstract: 2–3 sentences.] <a href="#">Paper</a> · <a href="#">Slides</a></p>
+      </article>
+
+      <h3>Working Papers</h3>
+      <article class="item">
+        <h4>[Title]</h4>
+        <p class="muted">with [Coauthor]. <a href="#">Paper</a></p>
+      </article>
+
+      <h3>Publications</h3>
+      <article class="item">
+        <h4>[Title]</h4>
+        <p class="muted">[Journal, year]. <a href="#">Link</a></p>
+      </article>
+
+      <h3>Work in Progress</h3>
+      <article class="item">
+        <h4>[Title]</h4>
+      </article>
+    </section>
+
+    <!-- TEACHING -->
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <article class="item">
+        <h4>[Course name]</h4>
+        <p class="muted">[Role: Instructor / TA], [University], [term]</p>
+      </article>
+    </section>
+
+    <!-- CV -->
+    <section id="cv">
+      <h2>CV</h2>
+      <p><a href="#">Download CV (PDF)</a></p>
+      <h3>Education</h3>
+      <article class="item">
+        <h4>[Degree], [University]</h4>
+        <p class="muted">[Years]</p>
+      </article>
+      <h3>References</h3>
+      <article class="item">
+        <h4>[Advisor name]</h4>
+        <p class="muted">[Title, institution, email]</p>
+      </article>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:lbh980828@gmail.com">lbh980828@gmail.com</a></p>
+      <p class="muted">[Office address, if any]</p>
+    </section>
+
+  </main>
+
+  <footer class="container">
+    <p class="muted">© <span id="year"></span> Banghui Liu</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
